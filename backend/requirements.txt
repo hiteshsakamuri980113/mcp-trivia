@@ -7,3 +7,4 @@ google-adk==1.0.0
 google-genai
 pydantic
 requests==2.31.0
+deprecated
