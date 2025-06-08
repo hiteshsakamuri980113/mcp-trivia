@@ -3,7 +3,7 @@ uvicorn[standard]==0.34.1
 gunicorn==21.2.0
 python-dotenv==1.1.0
 fastmcp
-google-adk
+google-adk==1.0.0
 google-genai
 pydantic
 requests==2.31.0
