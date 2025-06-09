@@ -106,7 +106,7 @@ export const IndividualQuestionDisplay: React.FC<
                 key={optionIndex}
                 onClick={() => handleAnswerSelect(optionIndex)}
                 className={`
-                  text-left glass-card p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:bg-white/20 cursor-pointer block w-fit
+                  trivia-option text-left glass-card transition-all duration-300 hover:bg-white/20 cursor-pointer
                   ${
                     selectedAnswer === optionIndex
                       ? "answer-selected scale-105 shadow-glow bg-white/15 border-2 border-blue-400/50"
@@ -114,9 +114,7 @@ export const IndividualQuestionDisplay: React.FC<
                   }
                 `}
               >
-                <span className="text-lg sm:text-xl lg:text-2xl text-white font-medium leading-relaxed">
-                  {option}
-                </span>
+                <span className="text-white leading-relaxed">{option}</span>
               </button>
             ))}
           </div>
