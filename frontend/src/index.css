@@ -199,6 +199,57 @@ body {
     0 0 40px rgba(109, 168, 255, 0.15);
 }
 
+/* Global selection button text color override - ensure white text on all devices */
+.glass-card {
+  color: white !important;
+}
+
+.glass-card * {
+  color: white !important;
+}
+
+.glass-card .text-playful {
+  color: white !important;
+}
+
+/* Override any conflicting text color classes in selection components */
+.topic-selected *,
+.answer-selected * {
+  color: white !important;
+}
+
+/* Force white text ONLY for selection components and states */
+.glass-card,
+.glass-card *,
+.trivia-option,
+.trivia-option *,
+.topic-selected,
+.topic-selected *,
+.answer-selected,
+.answer-selected * {
+  color: white !important;
+}
+
+/* Override specific Tailwind text color classes ONLY for selection components */
+.glass-card .text-playful,
+.trivia-option .text-playful,
+.topic-selected .text-playful,
+.answer-selected .text-playful,
+.glass-card .text-blue-100,
+.trivia-option .text-blue-100,
+.topic-selected .text-blue-100,
+.answer-selected .text-blue-100,
+.glass-card .text-blue-200,
+.trivia-option .text-blue-200,
+.topic-selected .text-blue-200,
+.answer-selected .text-blue-200,
+.glass-card .text-blue-300,
+.trivia-option .text-blue-300,
+.topic-selected .text-blue-300,
+.answer-selected .text-blue-300 {
+  color: white !important;
+}
+
 .answer-selected {
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(109, 168, 255, 0.6);
@@ -220,6 +271,7 @@ body {
   align-items: center !important;
   justify-content: flex-start !important;
   border-radius: 16px !important;
+  color: white !important;
 }
 
 .trivia-option span {
@@ -228,6 +280,7 @@ body {
   line-height: 1.2 !important;
   font-family: "Space Grotesk", sans-serif !important;
   letter-spacing: 0.01em !important;
+  color: white !important;
 }
 
 @media (min-width: 640px) {

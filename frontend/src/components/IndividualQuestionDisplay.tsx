@@ -86,7 +86,7 @@ export const IndividualQuestionDisplay: React.FC<
         {/* Question Card - REMOVED glass-card from container */}
         <div className="fade-in-up delay-100">
           <div className="mb-6 sm:mb-8">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-playful mb-6 sm:mb-8 leading-relaxed">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 leading-relaxed">
               {currentQuestion.question}
             </h2>
           </div>
@@ -106,7 +106,7 @@ export const IndividualQuestionDisplay: React.FC<
                 key={optionIndex}
                 onClick={() => handleAnswerSelect(optionIndex)}
                 className={`
-                  trivia-option text-left glass-card transition-all duration-300 hover:bg-white/20 cursor-pointer
+                  trivia-option text-left glass-card transition-all duration-300 hover:bg-white/20 cursor-pointer text-white
                   ${
                     selectedAnswer === optionIndex
                       ? "answer-selected scale-105 shadow-glow bg-white/15 border-2 border-blue-400/50"
@@ -114,7 +114,7 @@ export const IndividualQuestionDisplay: React.FC<
                   }
                 `}
               >
-                <span className="text-white leading-relaxed">{option}</span>
+                <span className="leading-relaxed">{option}</span>
               </button>
             ))}
           </div>

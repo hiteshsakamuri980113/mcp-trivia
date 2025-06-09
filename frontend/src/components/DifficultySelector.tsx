@@ -56,7 +56,7 @@ export const DifficultySelector: React.FC<DifficultySelectorProps> = ({
             >
               <button
                 onClick={() => onDifficultySelect(difficulty)}
-                className={`glass-card w-[160px] h-[85px] transition-all duration-500 hover:scale-105 ${
+                className={`glass-card w-[160px] h-[85px] transition-all duration-500 hover:scale-105 text-white ${
                   selectedDifficulty === difficulty
                     ? "topic-selected scale-105 shadow-glow"
                     : "hover:bg-white/15"
@@ -64,18 +64,16 @@ export const DifficultySelector: React.FC<DifficultySelectorProps> = ({
               >
                 <div className="text-center p-3 h-full flex flex-col justify-center">
                   <div
-                    className={`text-3xl font-bold mb-2 ${
-                      selectedDifficulty === difficulty
-                        ? "text-white"
-                        : "text-playful"
+                    className={`text-3xl font-bold mb-2 text-white ${
+                      selectedDifficulty === difficulty ? "" : ""
                     }`}
                   >
                     {difficultyInfo[difficulty].label}
                   </div>
                   <div
-                    className={`text-xs ${
+                    className={`text-xs text-white ${
                       selectedDifficulty === difficulty
-                        ? "opacity-90 text-blue-100"
+                        ? "opacity-90"
                         : "opacity-60"
                     }`}
                   >

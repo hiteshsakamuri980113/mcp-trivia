@@ -63,7 +63,7 @@ export const TopicSelector: React.FC<TopicSelectorProps> = ({
             >
               <button
                 onClick={() => handlePredefinedTopicSelect(topic)}
-                className={`glass-card w-[160px] h-[85px] transition-all duration-500 hover:scale-105 ${
+                className={`glass-card w-[160px] h-[85px] transition-all duration-500 hover:scale-105 text-white ${
                   selectedTopic === topic && !isCustomSelected
                     ? "topic-selected scale-105 shadow-glow"
                     : "hover:bg-white/15"
@@ -71,18 +71,18 @@ export const TopicSelector: React.FC<TopicSelectorProps> = ({
               >
                 <div className="text-center p-3 h-full flex flex-col justify-center">
                   <div
-                    className={`text-base font-semibold mb-1 ${
+                    className={`text-base font-semibold mb-1 text-white ${
                       selectedTopic === topic && !isCustomSelected
-                        ? "text-white font-bold text-lg"
-                        : "text-playful"
+                        ? "font-bold text-lg"
+                        : ""
                     }`}
                   >
                     {topic}
                   </div>
                   <div
-                    className={`text-xs ${
+                    className={`text-xs text-white ${
                       selectedTopic === topic && !isCustomSelected
-                        ? "opacity-90 text-blue-100"
+                        ? "opacity-90"
                         : "opacity-60"
                     }`}
                   >
