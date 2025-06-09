@@ -76,19 +76,19 @@ Steps to follow:
 2. Take the tool's response and output it exactly as received
 3. Store this response in the state under formatted_questions key""",
     tools=[
-        MCPToolset(
-            connection_params=StdioServerParameters(
-                command="python",
-                args=[
-                    os.path.abspath(TARGET_FILE_PATH)
-                ]
-            )
-        )
         # MCPToolset(
-        #     connection_params=SseServerParams(
-        #         url="http://localhost:8001"
+        #     connection_params=StdioServerParameters(
+        #         command="python",
+        #         args=[
+        #             os.path.abspath(TARGET_FILE_PATH)
+        #         ]
         #     )
         # )
+        MCPToolset(
+            connection_params=SseServerParams(
+                url="https://mcp-trivia-1.onrender.com/sse"
+            )
+        )
 
     ],
     output_key="formatted_questions"
