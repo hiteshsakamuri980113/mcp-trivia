@@ -46,8 +46,9 @@ export const TopicSelector: React.FC<TopicSelectorProps> = ({
         </div>
 
         <div
-          className="flex flex-wrap justify-center gap-4 mx-auto px-4"
+          className="grid gap-6 mx-auto px-4 justify-items-center topic-grid"
           style={{
+            gridTemplateColumns: "repeat(2, 160px)", // 2 columns on mobile
             gap: "1.5rem",
             marginBottom: "4rem",
             marginTop: "4rem",

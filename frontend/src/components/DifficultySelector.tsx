@@ -38,9 +38,9 @@ export const DifficultySelector: React.FC<DifficultySelectorProps> = ({
         </div>
 
         <div
-          className="grid gap-4 mb-8 mx-auto px-4"
+          className="grid gap-4 mb-8 mx-auto px-4 justify-items-center difficulty-grid"
           style={{
-            gridTemplateColumns: "repeat(3, 160px)",
+            gridTemplateColumns: "repeat(1, 160px)", // 1 column on mobile
             gap: "1.5rem",
             width: "fit-content",
             marginTop: "4rem",

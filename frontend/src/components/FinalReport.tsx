@@ -75,13 +75,8 @@ export const FinalReport: React.FC<FinalReportProps> = ({
 
           {/* Quick Stats */}
           <div
-            className="grid gap-4 mb-8 mx-auto"
-            style={{
-              gridTemplateColumns: "repeat(3, 160px)",
-              gap: "1.5rem",
-              width: "fit-content",
-              marginTop: "2rem",
-            }}
+            className="report-grid mb-8 mx-auto"
+            style={{ marginTop: "2rem" }}
           >
             <div className="glass-card w-[160px] h-[85px] flex flex-col justify-center items-center">
               <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-1">

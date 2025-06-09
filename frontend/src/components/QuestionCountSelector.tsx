@@ -28,9 +28,9 @@ export const QuestionCountSelector: React.FC<QuestionCountSelectorProps> = ({
         </div>
 
         <div
-          className="grid gap-4 mb-8 mx-auto px-4"
+          className="grid gap-4 mb-8 mx-auto px-4 justify-items-center count-grid"
           style={{
-            gridTemplateColumns: "repeat(4, 160px)",
+            gridTemplateColumns: "repeat(2, 160px)", // 2 columns on mobile
             gap: "1.5rem",
             width: "fit-content",
             marginTop: "4rem",
