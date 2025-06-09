@@ -1,0 +1,1 @@
+fastmcp run server.py --transport sse --port 9000
