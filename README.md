@@ -1,4 +1,4 @@
-# MCP Trivia Application 🧠✨
+# MCP Trivia Application ✨
 
 A modern, interactive trivia application built with React, TypeScript, and FastAPI, leveraging the Model Context Protocol (MCP) and Google's ADK for dynamic question generation.
 
